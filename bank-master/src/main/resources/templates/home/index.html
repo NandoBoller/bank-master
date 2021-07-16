@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Bank Applikation</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light mb40" id="mainNav" th:fragment="navigation" style="background: #092f7a; font-weight: 700;">
+			<div class="container">
+				<a class="navbar-brand" href="/bank/home">Banking System</a>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">									
+						<li class="nav-item br"><a class="nav-link"
+							href="/bank/customer/list">Kunden</a></li>
+						<li class="nav-item"><a class="nav-link"
+							href="/bank/account/list">Konten</a></li>
+					</ul>
+				</div>
+			</div>
+	</nav>
+	<div class="container">
+		<!-- Navigation -->
+		<h1>Bank  Applikation</h1>
+
+	<p>
+		In der Datenbank muss bei Accounttype die folgende Werte manuel eigetragen werde<br>
+		<ul>
+			<li>Checking</li>
+			<li>Loan</li>
+			<li>Savings</li>
+		</ul>
+
+	</p>
+	</div>
+	<footer style="background:#eee; padding:15px 0" th:fragment="footer1">
+		<div class="container">
+			Nando Boller
+		</div>
+	</footer>	
+</body>
+</html>
